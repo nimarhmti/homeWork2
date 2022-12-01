@@ -12,7 +12,7 @@ import { question4Slice } from "./Slices/question4Slice";
 //   question4: {},
 // };
 
-const makeStore = () => {
+export const makeStore = () => {
   return configureStore({
     reducer: {
       [question1Slice.name]: question1Slice.reducer,
@@ -23,4 +23,6 @@ const makeStore = () => {
   });
 };
 
-export const wrapper = createWrapper(makeStore);
+const store = makeStore();
+
+export default store;

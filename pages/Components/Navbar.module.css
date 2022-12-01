@@ -1,5 +1,6 @@
 .navbar__container {
   margin: 0;
+  height: 10vh;
 }
 .navbar__list {
   list-style: none;
