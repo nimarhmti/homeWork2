@@ -1,0 +1,22 @@
+.navbar__container {
+  margin: 0;
+}
+.navbar__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.4rem;
+}
+.navbar__item {
+  cursor: pointer;
+  background-color: #e5eaf5;
+  padding: 1rem;
+  border-radius: 2px;
+
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.navbar__item.selected {
+  background-color: #845bb3;
+  color: #e5eaf5;
+}

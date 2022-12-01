@@ -1,0 +1,15 @@
+.header__container {
+  text-align: center;
+  background-color: #e5eaf5;
+  height: 6rem;
+  color: #494d5f;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.header__container h5 {
+  font-size: 24px;
+}
