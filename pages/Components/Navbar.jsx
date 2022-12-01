@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 
@@ -13,22 +14,22 @@ const Navbar = () => {
 
   const handelSelectItem = (e) => {
     const { id } = e.target;
-
     setSelected(id);
   };
 
   const renderListItems = (item, index) => {
     return (
-      <li
-        className={`${styles.navbar__item} ${
-          selected === item ? styles.selected : ""
-        }`}
-        key={index}
-        id={item}
-        onClick={handelSelectItem}
-      >
-        {item}
-      </li>
+      <Link href={`#question${index + 1}`} key={index}>
+        <li
+          className={`${styles.navbar__item} ${
+            selected === item ? styles.selected : ""
+          }`}
+          id={item}
+          onClick={handelSelectItem}
+        >
+          {item}
+        </li>
+      </Link>
     );
   };
   return (
