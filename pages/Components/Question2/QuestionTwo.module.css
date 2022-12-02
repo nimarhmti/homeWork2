@@ -12,6 +12,14 @@
   display: flex;
   direction: rtl;
   flex-direction: column;
+  background-color: #a0d2eb;
+  width: 40%;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.input__section label {
+  margin: 0.4rem 0;
 }
 .base__list {
   display: flex;
@@ -26,6 +34,7 @@
   padding: 0.8rem;
   background-color: #fceed1;
 }
+
 .base__list p {
   width: 45%;
   padding: 8px;
