@@ -1,0 +1,74 @@
+.questionFour__Container {
+  width: 100%;
+  height: 75vh;
+  background-color: #d0bdf4;
+  display: flex;
+  flex-direction: column;
+}
+
+.player__inputs {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #a0d2eb;
+  direction: rtl;
+}
+.player__inputs button {
+  width: 20%;
+  background-color: white;
+  font-family: inherit;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 36px;
+  font-size: large;
+  color: #494d5f;
+  border: 2px solid #494d5f;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.player__input {
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+  background-color: #e8f9fd;
+  margin: 1rem;
+  width: 45%;
+  padding: 0.4rem;
+  border-radius: 4px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.player__input label {
+  margin-bottom: 4px;
+}
+.player__input input {
+  direction: rtl;
+  outline: none;
+  font-family: inherit;
+}
+
+.player__list {
+  text-align: center;
+  background-color: #e8f9fd;
+  padding: 2rem;
+  /* color: white; */
+}
+
+.player__item {
+  width: 100%;
+  /* color: white; */
+  border-radius: 8px;
+  display: flex;
+  padding: 1rem;
+  direction: rtl;
+  justify-content: space-between;
+  margin: 1rem auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 1px solid #252523;
+}
+.player__item button {
+  font-family: inherit;
+  margin: auto 1rem;
+  padding: 0.3rem;
+}
