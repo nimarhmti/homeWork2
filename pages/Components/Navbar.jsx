@@ -10,7 +10,7 @@ const navbarListItems = [
 ];
 
 const Navbar = () => {
-  const [selected, setSelected] = useState("بازی ریاضی");
+  const [selected, setSelected] = useState("");
 
   const handelSelectItem = (e) => {
     const { id } = e.target;
