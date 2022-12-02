@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
 import Question1 from "./Components/Question1/Index";
@@ -14,13 +15,18 @@ let renderQuestion = {
 };
 
 export default function Home() {
+  const [route, setRoute] = useState("");
   const { asPath } = useRouter();
+
+  useEffect(() => {
+    setRoute(asPath.slice(2));
+  }, [asPath]);
 
   return (
     <div className="home">
       <Header />
       <Navbar />
-      {renderQuestion[asPath.slice(2)]}
+      {renderQuestion[route]}
     </div>
   );
 }
