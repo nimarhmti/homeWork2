@@ -4,46 +4,45 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   questionsData: [
     {
-      title: "حاصل جمع عدد 1 و 1 چه مقداری میباشد؟",
+      title: "1+1?",
       level: "1",
-      options: ["همه گزینه‌ها", "هر عددی غیر از 2", "دامنه اعداد صحیح", "2"],
+      options: ["All options", "X>2", " |R", "2"],
       answer: "2",
     },
     {
-      title: "حاصل ضرب اعداد 5 و 6 چه عددی میشود؟",
+      title: "6*5?",
       level: "2",
       options: ["22", "1", "30", "10"],
       answer: "30",
     },
     {
-      title: "حاصلضرب دو عدد منفی در هم عددی است ؟",
+      title: "What is the calculator for multiplying two negative numbers?",
       level: "3",
-      options: ["منفی", "مثبت", "منفی و مثبت", "خنثی"],
-      answer: "مثبت",
+      options: ["negative", "positive", "positive & negative ", "none"],
+      answer: "positive",
     },
     {
-      title: "کدام عدد بدون باقی مانده بر عدد 4 بخش پذیر است",
+      title: "Which number is divisible by 4?",
       level: "4",
       options: ["106", "102", "110", "112"],
       answer: "112",
     },
     {
-      title: "سه عدد متوالی که حاصل آنها 63 میشود",
+      title: "Three consecutive numbers that add up to 63?",
       level: "5",
       options: ["19,20,21", "20,21,22", "18,20,22", "17,18,19"],
       answer: "20,21,22",
     },
     {
-      title:
-        "جان از جیم قدبلند تر است و جین از جان قدکوتاه ت، کدام جمله صحیح است؟",
+      title: " sina taller than nima so which option is correct? ",
       level: "6",
       options: [
-        "جین از جیم قدبلندتر است",
-        "جین هم‌قد جیم است",
-        "جیم از جین قدبلندتر است",
-        "هیچکدام",
+        "nima taller than sina",
+        "Nima and Sina are the same height",
+        "nima taller than sina",
+        "no One",
       ],
-      answer: "هیچکدام",
+      answer: "no One",
     },
   ],
 };

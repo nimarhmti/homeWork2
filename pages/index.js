@@ -24,7 +24,6 @@ export default function Home() {
 
   return (
     <div className="home">
-      <Header />
       <Navbar />
       {renderQuestion[route]}
     </div>

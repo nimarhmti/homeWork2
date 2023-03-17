@@ -1,3 +1,4 @@
+import { Chip } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import styles from "./Question.module.css";
@@ -39,10 +40,8 @@ const Index = () => {
     return (
       activeQuestionIndex === index && (
         <div className={styles.question__item} key={index}>
-          <p className={styles.clock}>{counter}</p>
-          <h4>
-            {index + 1}-{item.title}
-          </h4>
+          <Chip label={counter} />
+          <h4>{item.title}</h4>
           <div className={styles.answer__options__container}>
             {item.options.map((option, ind) => {
               return (
@@ -103,12 +102,12 @@ const Index = () => {
         <div className={styles.modal__container}>
           <div className={styles.modal__content}>
             <div>
-              <h5>آزمون شما به پایان رسید !</h5>
-              <h6>نمره آزمون شما {score} است</h6>
+              <h5> the end</h5>
+              <h6>your score: {score} </h6>
             </div>
             <div>
               <p className={styles.close__modal} onClick={handleCloseButton}>
-                پایان ازمون
+                done
               </p>
             </div>
           </div>
@@ -123,7 +122,7 @@ const Index = () => {
           className={styles.confirm__button}
           onClick={handleSubmitQuestion}
         >
-          ثبت پاسخ
+          next
         </button>
       </div>
     </div>

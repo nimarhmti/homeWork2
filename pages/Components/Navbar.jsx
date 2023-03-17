@@ -2,12 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 
-const navbarListItems = [
-  "بازی ریاضی",
-  "تبدیل مبنا",
-  "پیش‌بینی آب و هوا",
-  "تیم فوتبال",
-];
+const navbarListItems = ["Math", "base conversion", "Weather", "Football Team"];
 
 const Navbar = () => {
   const [selected, setSelected] = useState("");

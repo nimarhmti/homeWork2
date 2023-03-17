@@ -1,3 +1,4 @@
+import { Button, Card, CardContent } from "@mui/material";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -43,20 +44,20 @@ const Index = () => {
 
   const renderPlayerList = ({ name, nationality, post, number, id }, index) => {
     return (
-      <div className={styles.player__item} key={id}>
-        <p>نام : {name}</p>
-        <p>ملیت : {nationality}</p>
-        <p>پست : {post}</p>
-        <p> شماره : {number}</p>
+      <CardContent className={styles.player__item} key={id}>
+        <p>Full Name : {name}</p>
+        <p>Nationality : {nationality}</p>
+        <p>post : {post}</p>
+        <p> number : {number}</p>
         <div>
-          <button id={id} onClick={handleDeletePlayer}>
-            حذف
-          </button>
-          <button id={id} onClick={handleUpdatePlayer}>
-            ویرایش
-          </button>
+          <Button id={id} onClick={handleDeletePlayer} variant="contained">
+            remove
+          </Button>
+          <Button id={id} onClick={handleUpdatePlayer} variant="contained">
+            edit
+          </Button>
         </div>
-      </div>
+      </CardContent>
     );
   };
 
@@ -65,44 +66,44 @@ const Index = () => {
       <div className={styles.player__inputs}>
         <div style={{ display: "flex" }}>
           <div className={styles.player__input}>
-            <label>نام بازیکن</label>
             <input
+              placeholder="Full Name"
               id="name"
               onChange={handleChangeInput}
               value={playerDetails.name}
             />
           </div>
           <div className={styles.player__input}>
-            <label>ملیت</label>
             <input
+              placeholder="Nationality"
               id="nationality"
               onChange={handleChangeInput}
               value={playerDetails.nationality}
             />
           </div>
           <div className={styles.player__input}>
-            <label>شماره</label>
             <input
+              placeholder="number"
               id="number"
               onChange={handleChangeInput}
               value={playerDetails.number}
             />
           </div>
           <div className={styles.player__input}>
-            <label>پست</label>
             <input
+              placeholder="post"
               id="post"
               onChange={handleChangeInput}
               value={playerDetails.post}
             />
           </div>
         </div>
-        <button onClick={handleAddPlayer}>
-          {playerDetails.id ? "بروزرسانی بازیکن" : "اضافه کردن بازیکن"}
-        </button>
+        <Button variant="contained" onClick={handleAddPlayer}>
+          {playerDetails.id ? "edit " : "add"}
+        </Button>
       </div>
       <div className={styles.player__list}>
-        <h4>لیست بازیکنان</h4>
+        <h4> List:</h4>
         {players.map(renderPlayerList)}
       </div>
     </section>

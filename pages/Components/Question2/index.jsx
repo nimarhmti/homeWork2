@@ -1,3 +1,4 @@
+import { Chip } from "@mui/material";
 import React, { useState } from "react";
 import styles from "./QuestionTwo.module.css";
 
@@ -52,7 +53,7 @@ const Index = () => {
   return (
     <section className={styles.questionTwo__container}>
       <div className={styles.input__section}>
-        <label>مبنای مورد نظر را وارد کنید</label>
+        <label>From Base</label>
         <select onChange={handleChangeSelectedBase}>
           <option>2</option>
           <option>3</option>
@@ -70,25 +71,27 @@ const Index = () => {
           <option>15</option>
           <option>16</option>
         </select>
-        <label>عدد را وارد کنید</label>
+        <label>number</label>
         <input onChange={handleChangeInput} type="number" value={inputValue} />
       </div>
       <div className={styles.base__list}>
-        <p>مبنای دو : {baseCollection.base2} </p>
-        <p>مبنای سه :{baseCollection.base3}</p>
-        <p>مبنای چهار :{baseCollection.base4}</p>
-        <p>مبنای پنج :{baseCollection.base5}</p>
-        <p> مبنای شش :{baseCollection.base6}</p>
-        <p>مبنای هفت :{baseCollection.base7}</p>
-        <p>مبنای هشت :{baseCollection.base8}</p>
-        <p>مبنای نه :{baseCollection.base9}</p>
-        <p>مبنای ده :{baseCollection.base10}</p>
-        <p>مبنای یازدهم :{baseCollection.base11}</p>
-        <p>مبنای دوازدهم :{baseCollection.base12}</p>
-        <p>مبنای سیزدهم :{baseCollection.base13}</p>
-        <p>مبنای چهارده :{baseCollection.base14}</p>
-        <p>مبنای پانزده :{baseCollection.base15}</p>
-        <p>مبنای شانزدهم :{baseCollection.base16}</p>
+        <Chip label="results" color="success" />
+        <br />
+        <p>base 2 = {baseCollection.base2} </p>
+        <p>base 3 = {baseCollection.base3}</p>
+        <p>base 4 = {baseCollection.base4}</p>
+        <p>base 5 = {baseCollection.base5}</p>
+        <p>base 6 = {baseCollection.base6}</p>
+        <p>base 7 = {baseCollection.base7}</p>
+        <p>base 8 = {baseCollection.base8}</p>
+        <p>base 9 = {baseCollection.base9}</p>
+        <p>base 10 = {baseCollection.base10}</p>
+        <p>base 11 = {baseCollection.base11}</p>
+        <p>base 12 = {baseCollection.base12}</p>
+        <p>base 13 = {baseCollection.base13}</p>
+        <p>base 14 = {baseCollection.base14}</p>
+        <p>base 15 = {baseCollection.base15}</p>
+        <p>base 16 = {baseCollection.base16}</p>
       </div>
     </section>
   );
